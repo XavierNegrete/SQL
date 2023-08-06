@@ -1,0 +1,7 @@
+# 1. What are the top 10 artists based on popularity?
+SELECT * FROM BIT_DB.Spotifydata;
+
+SELECT artist_name, popularity
+FROM BIT_DB.Spotifydata
+ORDER BY popularity desc
+LIMIT 10;
