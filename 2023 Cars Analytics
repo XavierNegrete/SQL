@@ -1,0 +1,13 @@
+# Here I am exploring the dataset from Kaggle a list of 2023 car prices.
+#I asked the following questions and used the following SQL.
+
+create table BIT_DB.CARS (year TEXT, make TEXT, model TEXT, price INT);
+
+SELECT *
+FROM CARS;
+
+# What are the top 10 most expensive cars from all makes?
+SELECT *
+FROM CARS
+ORDER BY price desc
+LIMIT 10;
